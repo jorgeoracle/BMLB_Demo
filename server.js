@@ -7,16 +7,16 @@ const server = http.createServer((req, res) => {
   if (req.url === '/status') {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World - Response from Server hope - Status\n');
+  res.end('Hello World - Response from server '+hostname+' - Status\n');
   } else {
       if (req.url === '/echo') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/plain');
-        res.end('Hello World - Response from Server hope\n');
+        res.end('Hello World - Response from server '+hostname+ '\n');
       } else {
           res.statusCode = 404;
           res.setHeader('Content-Type', 'text/plain');
-          res.end('Hello World - Response from Server hope - Error\n');
+          res.end('Hello World - Response from server '+hostname+' - Error\n');
         }
     }
 });
