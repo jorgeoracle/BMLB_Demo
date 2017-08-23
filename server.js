@@ -6,7 +6,7 @@ const server = http.createServer((req, res) => {
   if (req.url === '/status') {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World - Response from Server 1 - Status\n');
+  res.end('Hello World - Response from Server hope - Status\n');
   } else {
       if (req.url === '/echo') {
         res.statusCode = 200;
