@@ -1,5 +1,6 @@
 const http = require('http');
-const hostname = 'hope';
+const os = require ('os');
+const hostname = os.hostname();
 const port = 8080;
 
 const server = http.createServer((req, res) => {
